@@ -1,0 +1,10 @@
+[Unit]
+Description=Set Voyager keyboard layout to US
+After=graphical.target
+[Service]
+Type=oneshot
+ExecStart=/home/riikka/.config/voyager-us.sh
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/riikka/.Xauthority
+[Install]
+WantedBy=default.target
